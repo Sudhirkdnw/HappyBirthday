@@ -1,0 +1,124 @@
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1290px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1140px) {
+    .container {
+        width: 100%;
+    }
+    .copy-social-4 {
+        margin-top: 130px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .copy-social-4 {
+        margin-top: 60px;
+    }
+    .Desc-4 {
+        margin-top: 20px;
+    }
+    .seconds {
+        height: 60px;
+    }
+    #clockdiv div>span {
+        font-size: 60px;
+        height: 60px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+    .logo {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .row {
+        --bs-gutter-x: 1.5rem;
+    }
+    .timer-4 .col-4 {
+        width: 25%;
+    }
+    .Name {
+        font-size: 18px;
+    }
+    .copy-social-4 {
+        font-size: 16px;
+    }
+    #clockdiv>div {
+        width: 50%;
+        padding: 20px 0;
+    }
+    .seconds {
+        height: 60px;
+    }
+    #clockdiv div>span {
+        font-size: 60px;
+        height: 60px;
+        line-height: 45px;
+    }
+    .logo {
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:540px) {
+    .container {
+        width: 100%;
+    }
+    .logo {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .Name {
+        font-size: 16px;
+    }
+    .row {
+        --bs-gutter-x: 1.5rem;
+    }
+    .Desc-4 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .copy-right-4 {
+        font-size: 16px;
+    }
+    #clockdiv {
+        padding: 25px 0;
+    }
+}
+
+@media (max-width:340px) {
+    .container {
+        width: 100%;
+    }
+}

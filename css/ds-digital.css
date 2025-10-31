@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGI.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: italic;
+    font-weight: 400;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGII.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGIB.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: italic;
+    font-weight: 700;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGIT.woff') format('woff');
+}
