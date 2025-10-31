@@ -216,7 +216,7 @@ function initializeClock(id, endtime) {
         if (t.total <= 0) {
             clearInterval(timeinterval);
             // Redirect to index.html
-            window.location.href = "index.html";
+            window.location.href = "main.html";
         }
     }
 
