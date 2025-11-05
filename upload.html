@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Upload Photo</title>
+    <style>
+      body {
+        font-family: Arial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      input,
+      button {
+        margin: 10px;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Upload Photo</h2>
+    <input type="file" id="photoInput" accept="image/*" />
+    <button onclick="uploadPhoto()">Upload</button>
+
+    <script>
+      function uploadPhoto() {
+        const file = document.getElementById("photoInput").files[0];
+        if (!file) return alert("Please select a photo first");
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          // Store image permanently in localStorage
+          localStorage.setItem("uploadedPhoto", e.target.result);
+          alert("Photo uploaded successfully!");
+          // Redirect to display page
+          window.location.href = "display.html";
+        };
+        reader.readAsDataURL(file);
+      }
+    </script>
+  </body>
+</html>

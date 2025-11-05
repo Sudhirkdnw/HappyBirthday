@@ -25,7 +25,7 @@
 
       <section class="banner-content">
         <div class="image-box">
-          <img src="/img/IMG-20251018-WA0017.jpg" alt="Birthday Image" />
+          <img id="displayPhoto" alt="Your uploaded photo will appear here" />
         </div>
 
         <div class="text-box">
@@ -45,10 +45,34 @@
             I never want to end. On your special day, I just want you to know —
             you’re not just my love, you’re my peace, my home, my forever. 💫💋
           </p>
-          <button class="confirm-btn">OPEN UR GIFT 😍</button>
+          <button id="giftText" class="confirm-btn">OPEN UR GIFT 😍</button>
         </div>
       </section>
     </div>
+
+    <script>
+      const photoData = localStorage.getItem("uploadedPhoto");
+
+      if (photoData) {
+        document.getElementById("displayPhoto").src = photoData;
+      } else {
+        document.body.innerHTML +=
+          "<p>No photo uploaded yet. Go to <a href='upload.html'>upload page</a>.</p>";
+      }
+
+      function clearPhoto() {
+        localStorage.removeItem("uploadedPhoto");
+        alert("Photo removed!");
+        location.reload();
+      }
+
+      const giftText = document.getElementById('giftText');
+      setTimeout(() => {
+      giftText.textContent = "🎉 Let's celebrate 🎉 this on the auspicious day we connect!";
+      giftText.style.color = "#FFFF00";
+      giftText.style.transform = "scale(1.5)";
+    }, 30000); // 60,000ms = 1 minute
+    </script>
     <canvas id="c"></canvas>
     <!-- Greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
